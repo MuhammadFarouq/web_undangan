@@ -7,7 +7,7 @@
 body {
   font-size: 1.2rem;
   font-family: "Work Sans", sans-serif;
-  max-width: 100vw;
+  overflow-x: hidden;
 }
 
 .hero::before {
@@ -26,7 +26,7 @@ body {
 
 .hero {
   position: relative;
-  min-height: 101vh;
+  min-height: 102vh;
 }
 
 .hero h1,
@@ -387,8 +387,8 @@ body {
   }
 
   .simply-countdown > .simply-section {
-    padding: 45px;
-    margin: 3px;
+    padding: 43px;
+    margin: 4px;
   }
 
   .timeline::before {
@@ -396,14 +396,14 @@ body {
   }
 
   .timeline li .timeline-panel {
-    width: calc((100% - 95px));
+    width: calc((100% - 100px));
     float: left;
   }
 
   .timeline li .timeline-image {
     width: 85px;
     height: 85px;
-    right: -78px;
+    right: -68px;
     left: auto;
     margin-right: 25px;
     top: 16px;
