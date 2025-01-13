@@ -127,23 +127,6 @@ body {
   width: 100%;
 }
 
-.home .heart {
-  width: 50px;
-  height: 50px;
-  background-color: white;
-  display: flex;
-  border-radius: 50%;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%) translateY(55px);
-}
-
-.home .heart i {
-  margin: auto;
-  color: var(--pink);
-}
-
 .info {
   background-color: var(--bg);
   color: white;
@@ -360,12 +343,37 @@ footer li {
   margin: 0.5rem;
 }
 
+.audio-icon-wrapper {
+  width: 4rem;
+  height: 4rem;
+  font-size: 4rem;
+  position: fixed;
+  bottom: 2.5rem;
+  right: 2rem;
+  cursor: pointer;
+  color: white;
+  opacity: 0.5;
+  mix-blend-mode: difference;
+  animation: rotating 4s linear infinite;
+  transform-origin: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 0;
+}
+
+@keyframes rotating {
+  form {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 /* media Query */
 /* Extra large */
 @media (max-width: 1200px) {
-  .home .heart {
-    transform: translateX(-50%) translateY(45px);
-  }
 }
 
 /* laptop */
@@ -376,10 +384,6 @@ footer li {
 
   .simply-countdown > .simply-section {
     padding: 70px;
-  }
-
-  .home .heart {
-    display: none;
   }
 
   .timeline::before {
@@ -485,81 +489,3 @@ footer li {
     top: 31px;
   }
 }
-
-/* complex media query, tetapi masih terdapat bug */
-
-/* Extra small devices (phones, 600px and down)
-@media only screen and (max-width: 600px) {
-  html {
-    font-size: 50%;
-  }
-  .simply-countdown > .simply-section {
-    padding: 40px;
-    margin: 3px;
-  }
-  .home .heart {
-    display: none;
-  }
-}
-
-
-
-Small devices (portrait tablets and large phones, 600px and up)
-@media only screen and (min-width: 600px) {
-  html {
-    font-size: 65%;
-  }
-  .simply-countdown > .simply-section {
-    padding: 55px;
-    margin: 5px;
-  }
-
-  .mynavbar .nav-link {
-    font-size: 2rem;
-    text-align: center;
-  }
-}
-
-Medium devices (landscape tablets, 768px and up)
-@media only screen and (min-width: 768px) {
-  html {
-    font-size: 75%;
-  }
-  .simply-countdown > .simply-section {
-    padding: 65px;
-    margin: 5px;
-  }
-}
-
-
-
-Large devices (laptops/desktops, 992px and up)
-@media only screen and (min-width: 992px) {
-  html {
-    font-size: 85%;
-  }
-  .simply-countdown > .simply-section {
-    padding: 75px;
-  }
-}
-
-Extra large devices (large laptops and desktops, 1200px and up)
-@media only screen and (min-width: 1200px) {
-  html {
-    font-size: 100%;
-  }
-  .simply-countdown > .simply-section {
-    padding: 80px;
-  }
-
-  .home .heart {
-    transform: translateX(-50%) translateY(75px);
-  }
-}
-
-fixing logo love ditengah
-@media only screen and (max-width: 991.2px) {
-  .home .heart {
-    display: none;
-  }
-} */
